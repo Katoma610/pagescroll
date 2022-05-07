@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.page{
+    width: 100%;
+    height: 100vh;
+}
+
+
+body{
+    background-color: brown;
+    
+}
+
+.page1{
+    background: url("images/wood.jpg");
+}
+
+.page2{
+    background: url("images/moon1.jpg");
+}
+
+.page3{
+    background: url("images/dessert.jpg");
+}
+
+#arrowTop {
+    height: 300px;
+    width: 300px;
+    color: green;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    cursor: pointer;
+    background: url("images/up.gif");
+}
+
+#arrowTop::before {
+    /* content: '🔺'; */
+    /* background: url("images/up.gif"); */
+}
+
+.button {
+    padding: 15px 25px;
+    display: inline-block;
+    background-color: orange;
+    border: 2px solid rgb(109, 6, 6);
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    cursor: pointer;
+    transition: all;
+}
+
+.button:hover {
+    background-color: white;
+    color: orange;
+}
+
+.container{
+    max-width: 800px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider {
+    border: 2px solid  black;
+    width: 256px;
+    height: 256px;
+    overflow: hidden;
+}
+
+.sliderLine {
+    width: 1024px;
+    height: 256px;
+    display: flex;
+    background-color: orange;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
