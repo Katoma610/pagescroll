@@ -44,3 +44,11 @@ document.querySelector('.sliderNext').addEventListener('click', function(){
   }
   sliderLine.style.left = -offset + 'px';
 })
+
+document.querySelector('.sliderPrev').addEventListener('click', function(){
+  offset = offset - 256;
+  if (offset < -768) {
+    offset = 768;
+  }
+  sliderLine.style.left = -offset + 'px';
+})
