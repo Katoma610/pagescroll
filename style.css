@@ -51,11 +51,10 @@ body{
     background: url("images/up.gif");
 }
 
-#arrowTop::before {
-    /* content: '🔺'; */
-    /* background: url("images/up.gif"); */
-}
-
+/* #arrowTop::before {
+    content: '🔺';
+    background: url("images/up.gif");
+} */
 .button {
     padding: 15px 25px;
     display: inline-block;
